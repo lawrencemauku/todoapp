@@ -26,6 +26,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "calendar_view",
+      "rootUri": "file:///C:/Users/Macheo/Documents/flutter_windows_3.0.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/calendar_view-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///C:/Users/Macheo/Documents/flutter_windows_3.0.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1",
       "packageUri": "lib/",
@@ -350,7 +356,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-12-18T10:55:50.052877Z",
+  "generated": "2022-12-18T20:55:56.992353Z",
   "generator": "pub",
   "generatorVersion": "2.18.0"
 }
