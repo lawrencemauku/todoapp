@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:todoapp/new-todo.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         //
-        textTheme: GoogleFonts.bevanTextTheme(),
+        textTheme: GoogleFonts.dosisTextTheme(),
         primarySwatch: Colors.green,
       ),
       home: MyHomePage(),
@@ -274,18 +275,19 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            onPressed: () => addTaskDialog(),
+            onPressed: () => Get.to(() => NewToDoItem(),
+                curve: Curves.easeInOut, duration: Duration(milliseconds: 200), transition: Transition.fadeIn,),
             tooltip: 'add task',
-            child: const Icon(Icons.task),
+            child: const Icon(Icons.add_task),
           ),
           SizedBox(
             height: 20,
           ),
-          FloatingActionButton(
-            onPressed: () => store.remove('Tasks'),
-            tooltip: 'clear all tasks',
-            child: const Icon(Icons.clear),
-          ),
+          // FloatingActionButton(
+          //   onPressed: () => store.remove('Tasks'),
+          //   tooltip: 'clear all tasks',
+          //   child: const Icon(Icons.clear),
+          // ),
         ],
       ),
     );
