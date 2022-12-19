@@ -217,7 +217,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 : ListTile(
                                     title: Text(
                                       todoList[index]['title'].toString(),
-                                      style: GoogleFonts.acme(
+                                      style: GoogleFonts.dosis(
                                           fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blue),
                                     ),
                                     subtitle: SingleChildScrollView(
@@ -227,7 +227,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             Text(
                                               todoList[index]['body'].toString(),
                                               maxLines: 3,
-                                              style: GoogleFonts.acme(
+                                              style: GoogleFonts.dosis(
                                                   fontSize: 12, fontWeight: FontWeight.w300, color: Colors.black38),
                                             ),
                                             Row(
